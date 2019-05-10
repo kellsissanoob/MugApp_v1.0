@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+	<script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    
+    <script src = "index.js"></script>
+
+
+	<title>MugApp</title>
+    
+    <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+       var config = 
+       {
+		   apiKey: "AIzaSyCCgPM9HOlWzWwAHbQJmGWf89_sbWkEWJs",
+		   authDomain: "mugapp-v1.firebaseapp.com",
+		   databaseURL: "https://mugapp-v1.firebaseio.com",
+		   projectId: "mugapp-v1",
+		   storageBucket: "mugapp-v1.appspot.com",
+		   messagingSenderId: "678585681495"
+  		};
+  	   firebase.initializeApp(config);
+	</script>
+
+<script src = "https://www.gstatic.com/firebasejs/5.4.2/firebase-firestore.js"></script>
+<script src = "https://www.gstatic.com/firebasejs/5.4.2/firebase-auth.js"></script>
+<script src = "https://www.gstatic.com/firebasejs/5.4.2/firebase-database.js"></script>
+<script src = "https://www.gstatic.com/firebasejs/5.4.2/firebase-functions.js"></script>
+    
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="index.html">MugApp</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" style="">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor01">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="t_profile.html">Profile</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="t_class.html">My Classes</a>
+      </li>
+      <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="t_moduleSet.html" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Modules</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="t_moduleSet.html">New Module</a>
+              <a class="dropdown-item" href="#">Previous Modules</a>
+              <a class="dropdown-item" href="#">Modules Leaderboard</a>
+            </div>
+          </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About MugApp</a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li><a class="nav-link" href="index.html">Logout</a></li>
+     </ul>
+  </div>
+</nav>
+
+<div class="container text-center">
+    <h3>Hello, Teacher! </h3>
+ </div>
+ <p>
+	<h4>Here's your quote of the day: </h4>
+	
+	<div class = "container text-center">
+<blockquote class="blockquote text-center">
+  <p class="mb-0"><strong>Don't limit a child to your own learning, for he was born in another time.</strong></p>
+  <footer class="blockquote-footer"><em>Rabindranath Tagore</em></footer>
+</blockquote>
+  </div>
+  
+  <h4>Your classes</h4>
+  <div class = "container text-center">
+  <table class="table">
+  <thead>
+    <tr class = "table-primary">
+      <th scope="col">Form/Class</th>
+      <th scope="col">Subject Name</th>
+      <th scope="col">No. of Students</th>
+      <th scope="col">Modules</th>
+    </tr>
+  </thead>
+</table>  
+
+  <p class="text-muted">You have no classes yet. Add a class <a href = "t_class.html" >here</a>.</p>
+  
+  </div>
+   
+   
+  <h4>Setup Modules</h4> 
+  <div class = "container text-center">
+  <div class="alert alert-dismissible alert-danger">
+  <strong>Looks like there are no modules created.</strong> 
+  <a href="t_moduleSet.html" class="alert-link">Assign tutorials</a> and customise the experience.
+</div>
+  </div>
+
+<p class="mt-5 mb-3 text-muted text-center">&copy; 2017-2018</p>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
+    
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    
+    <script src = "index.js"></script>
+    
+    <title>MugApp</title>
+    
+    
+
+<script src = "https://www.gstatic.com/firebasejs/5.4.2/firebase-firestore.js"></script>
+<script src = "https://www.gstatic.com/firebasejs/5.4.2/firebase-auth.js"></script>
+<script src = "https://www.gstatic.com/firebasejs/5.4.2/firebase-database.js"></script>
+<script src = "https://www.gstatic.com/firebasejs/5.4.2/firebase-functions.js"></script>
+    
+</head>
+
+<body>
+<script>
+      // Initialize Firebase
+       var config = 
+       {
+		   apiKey: "AIzaSyCCgPM9HOlWzWwAHbQJmGWf89_sbWkEWJs",
+		   authDomain: "mugapp-v1.firebaseapp.com",
+		   databaseURL: "https://mugapp-v1.firebaseio.com",
+		   projectId: "mugapp-v1",
+		   storageBucket: "mugapp-v1.appspot.com",
+		   messagingSenderId: "678585681495"
+  		};
+  	   firebase.initializeApp(config);
+	</script>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="index.html">MugApp</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" style="">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor01">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="profile.html">Profile</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="class.html">My Classes</a>
+      </li>
+      <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Modules</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#">New Module</a>
+              <a class="dropdown-item" href="#">Previous Modules</a>
+              <a class="dropdown-item" href="#">Modules Leaderboard</a>
+            </div>
+          </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About MugApp</a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li><a class="nav-link" href="userType.html">Login</a></li>
+     </ul>
+  </div>
+</nav>
+    
+<div class = "container text-center">
+<h1>This is MugApp</h1>
+</div>
+   
+   <div class="jumbotron">
+  <h4 class="display-5">Say Goodbye to Paper Assignments! </h4>
+  <p class="lead"> This is a mobile learning application built for students and teachers who love to make learning fun and interactive. </p>
+  <hr class="my-4">
+  <p>Check out the features available to change the way your students learn in school. </p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="about.html" role="button">Learn more</a>
+  </p>
+  </div>
+  
+  
+  <blockquote class="blockquote text-center">
+  <p class="mb-0"><strong>All work and no play makes Jack a dull boy.</strong></p>
+  <footer class="blockquote-footer"><em>Proverb</em></footer>
+</blockquote>
+  
+  <div class = "container text-center">
+	<h1>Who uses this?</h1>
+  </div>
+  
+  <div class = "card-container">
+  <div class="card border-primary mb-3" style="max-width: 20rem;">
+  <div class="card-header text-white bg-primary">For Teachers</div>
+  <div class="card-body">
+    <div class="card-title"><strong>Thank You For Your Contribution</strong></div>
+    <p class="card-text" >We understand the struggle as an educator. Hence, here are some perks for you. <a href = "t_login.html">Sign up</a> your class now!</p>
+  </div>
+  </div>
+</div>
+
+<div class = "card-container">
+<div class="card border-secondary mb-3" style="max-width: 20rem;">
+  <div class="card-header text-white bg-secondary">For Students</div>
+  <div class="card-body">
+    <div class="card-title"><strong>Its Okay to be Bad at Maths</strong></div>
+    <p class="card-text">We know you're trying to be better in the class. So, we are here to help you. Tell your teacher and <a href = "s_login.html">sign up</a> as a class!</p>
+  </div>
+</div>
+</div>
+
+    
+<p class="mt-5 mb-3 text-muted text-center">&copy; 2017-2019</p>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+	<script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+    
+	<title>Sign In to MugApp</title>
+    
+    <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+       var config = 
+       {
+		   apiKey: "AIzaSyCCgPM9HOlWzWwAHbQJmGWf89_sbWkEWJs",
+		   authDomain: "mugapp-v1.firebaseapp.com",
+		   databaseURL: "https://mugapp-v1.firebaseio.com",
+		   projectId: "mugapp-v1",
+		   storageBucket: "mugapp-v1.appspot.com",
+		   messagingSenderId: "678585681495"
+  		};
+  	   firebase.initializeApp(config);
+	</script>
+
+<script src = "https://www.gstatic.com/firebasejs/5.4.2/firebase-firestore.js"></script>
+<script src = "https://www.gstatic.com/firebasejs/5.4.2/firebase-auth.js"></script>
+<script src = "https://www.gstatic.com/firebasejs/5.4.2/firebase-database.js"></script>
+<script src = "https://www.gstatic.com/firebasejs/5.4.2/firebase-functions.js"></script>
+    
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="index.html">MugApp</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" style="">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor01">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="profile.html">Profile</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="class.html">My Classes</a>
+      </li>
+      <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Modules</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#">New Module</a>
+
+              <a class="dropdown-item" href="#">Modules Leaderboard</a>
+            </div>
+          </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About MugApp</a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li><a class="nav-link" href="userType.html">Login</a></li><span class="sr-only"></span>
+     </ul>
+  </div>
+</nav>
+
+<div class="container text-center">
+    <h3>Select Your Role</h3>
+	
+	<div class = "center-block">
+	<a href = "t_login.html" class = "btn btn-primary center-block"> I am a Teacher </button></a>
+	<a href = "s_login.html" class = "btn btn-secondary center-block"> I am a Student </button></a>
+	</div>
+</div>
+
+
+
+<script src = "login.js"></script>
+
+<p class="mt-5 mb-3 text-muted text-center">&copy; 2017-2018</p>
+</body>
+</html>
